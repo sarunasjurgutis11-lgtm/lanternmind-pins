@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2027 Paycheck Budget Planner | Google Sheets & Excel</title>
+<meta name="description" content="Plan every paycheck in 2027: see which bills each paycheck pays, what to save and what is left to spend. Budget template for Google Sheets and Excel, plus a free savings challenge tracker.">
+<meta property="og:title" content="2027 Paycheck Budget Planner for Google Sheets & Excel">
+<meta property="og:description" content="Every payday of 2027 planned for you. Free 100 envelope + 52 week savings challenge tracker.">
+<meta property="og:image" content="img/dash_top.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F1E6;--panel:#FFFFFF;--ink:#1F3D2B;--acc:#2F6B4F;--gold:#C97F22;--line:#D5DDD2;--sub:#5C7364}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 Jost,system-ui,sans-serif}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+header{padding:44px 0 8px;text-align:center}
+.tag{font:600 13px Jost;letter-spacing:.14em;color:var(--acc);text-transform:uppercase}
+h1{font:600 clamp(38px,6vw,64px)/1.05 "Cormorant Garamond",serif;margin:14px 0 8px}
+.sub{font:italic 500 clamp(22px,3vw,28px) "Cormorant Garamond",serif;color:var(--gold);margin:0 0 24px}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:8px 0 28px}
+.btn{display:inline-block;padding:14px 24px;border-radius:999px;font:600 15px Jost;letter-spacing:.04em;text-decoration:none}
+.btn.main{background:var(--acc);color:#fff}
+.btn.ghost{border:2px solid var(--acc);color:var(--acc)}
+.shot{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:0 18px 40px rgba(31,61,43,.14);overflow:hidden}
+.shot img{display:block;width:100%;height:auto}
+section{padding:34px 0}
+h2{font:600 clamp(28px,4vw,40px)/1.1 "Cormorant Garamond",serif;margin:0 0 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{margin:0 0 6px;font:600 18px Jost}
+.card p{margin:0;color:var(--sub);font-size:15.5px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}
+@media (max-width:760px){.two{grid-template-columns:1fr}}
+.free{background:var(--ink);color:#F5F1E6;border-radius:18px;padding:30px 24px;text-align:center}
+.free h2{color:#fff}
+.free .btn.main{background:var(--gold)}
+.note{font-size:14px;color:var(--sub);text-align:center}
+footer{padding:30px 0 50px;text-align:center;font:600 12px Jost;letter-spacing:.14em;color:var(--acc)}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="tag">Google Sheets · Excel · Instant download</div>
+  <h1>2027 Paycheck Budget Planner</h1>
+  <p class="sub">Every payday planned for you.</p>
+  <div class="btns">
+    <a class="btn main" href="#free">Get the free savings tracker</a>
+    <a class="btn ghost" href="#inside">See what's inside</a>
+  </div>
+  <div class="shot"><img src="img/dash_top.jpg" alt="Budget dashboard in Google Sheets with money in, spent, left this month and safe to spend per day cards, a donut chart and budget vs spent bars" width="976" height="506"></div>
+</header>
+
+<section id="inside" class="wrap">
+  <div class="two">
+    <div>
+      <h2>Budget by paycheck, not by month</h2>
+      <p>Type your paycheck, how often you are paid and your bills once. The sheet lists every payday of 2027 and shows which bills each paycheck has to cover, what to save, and what is left to spend before the next payday.</p>
+    </div>
+    <div class="shot"><img src="img/paycheck.jpg" alt="Budget by paycheck tab listing every 2027 payday with bills due, savings and left to spend" width="1036" height="506" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>24 tabs that fill themselves</h2>
+  <div class="grid">
+    <div class="card"><h3>Dashboard</h3><p>Money in, spent, left and safe to spend per day, with charts.</p></div>
+    <div class="card"><h3>Budget by paycheck</h3><p>Every payday of the year with the bills it pays and what is left.</p></div>
+    <div class="card"><h3>Savings challenges</h3><p>100 envelopes (or your own goal) and a 52-week challenge.</p></div>
+    <div class="card"><h3>Debt payoff plan</h3><p>Avalanche or snowball, with your debt-free date month by month.</p></div>
+    <div class="card"><h3>Bills + bill calendar</h3><p>Due days, paid status and a real calendar of when money leaves.</p></div>
+    <div class="card"><h3>Sinking funds + net worth</h3><p>Yearly costs in monthly pieces, and own minus owe each month.</p></div>
+  </div>
+  <p class="note">Works in Google Sheets (free) and Excel 2016+. Light and dark versions. Any currency.</p>
+</section>
+
+<section id="free" class="wrap">
+  <div class="free">
+    <h2>Free: 2027 Savings Challenge Tracker</h2>
+    <p>The 100 envelope challenge (classic or scaled to your own goal) and the 52-week challenge in one sheet. Type x under an amount and the box turns green.</p>
+    <div class="shot" style="margin:18px 0"><img src="img/savings.jpg" alt="Savings challenge tracker with 100 envelope grid and 52 week challenge, saved boxes in green" width="1164" height="506" loading="lazy"></div>
+    <a class="btn main" href="2027-Savings-Challenge-Tracker-FREE.xlsx" download>Download the free tracker (.xlsx)</a>
+    <p style="font-size:14px;opacity:.8;margin-top:12px">Google Sheets: upload it to Drive, then File &gt; Save as Google Sheets.</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>The full planner is coming to Etsy soon</h2>
+  <p>All 24 tabs, light and dark versions, and a step-by-step start guide. Follow <strong>Paycheck Budget Studio</strong> on Pinterest to see it first.</p>
+</section>
+
+<footer>PAYCHECK BUDGET STUDIO · PLAN EVERY PAYCHECK IN 2027</footer>
+</body>
+</html>
